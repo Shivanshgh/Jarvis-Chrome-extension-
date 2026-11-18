@@ -1,4 +1,4 @@
-# JARVIS New Tab
+# JARVIS (Extension)
 
 A lightweight Chrome New Tab extension built with HTML, CSS, and JavaScript. It has a transparent particle orb, clock, date, time-based greeting, Google search, editable shortcuts, and optional voice search.
 
