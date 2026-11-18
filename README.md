@@ -3,11 +3,12 @@
 A lightweight Chrome New Tab extension built with HTML, CSS, and JavaScript. It has a transparent particle orb, clock, date, time-based greeting, Google search, editable shortcuts, and optional voice search.
 
 ## Install locally
-
-1. Open `chrome://extensions` in Chrome.
-2. Enable **Developer mode**.
-3. Select **Load unpacked** and choose this project folder.
-4. Open a new tab.
+1.Set up a new folder. 
+2.Download the zip file in the new folder.
+3. Open `chrome://extensions` in Chrome.
+4. Enable **Developer mode**.
+5. Select **Load unpacked** and choose this project folder.
+6. Open a new tab.
 
 ## Features
 
