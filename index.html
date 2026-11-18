@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#050b16">
+  <title>JARVIS</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="home">
+    <header class="topline">
+      <p class="brand"><span class="brand-dot"></span> J.A.R.V.I.S.</p>
+      <time class="clock" id="clock" aria-label="Current time">--:--</time>
+    </header>
+
+    <section class="center" aria-label="Welcome">
+      <p class="date" id="date">Loading date</p>
+      <h1 id="greeting">Good day.</h1>
+      <div class="sphere-wrap" id="sphereWrap" aria-label="Purple audio-reactive particle orb">
+        <img class="sphere" src="assets/sphere.png" alt="Purple glowing particle orb">
+      </div>
+    </section>
+
+    <form class="search" id="searchForm" role="search">
+      <span class="search-symbol" aria-hidden="true">⌕</span>
+      <input id="searchInput" type="search" name="q" placeholder="Search Google or enter a URL" autocomplete="off" aria-label="Search Google or enter a URL">
+      <button id="micButton" class="mic" type="button" aria-label="Search by voice" title="Search by voice" hidden>⌁</button>
+      <canvas id="voiceWaveform" class="voice-waveform" aria-hidden="true" hidden></canvas>
+      <button class="search-submit" type="submit" aria-label="Search">↗</button>
+    </form>
+
+    <section class="shortcuts" aria-label="Website shortcuts">
+      <div class="shortcut-list" id="shortcutList"></div>
+      <button class="manage" id="manageShortcuts" type="button">EDIT SHORTCUTS</button>
+    </section>
+
+    <p class="status" id="status" role="status" aria-live="polite"></p>
+  </main>
+
+  <dialog class="editor" id="shortcutDialog" aria-labelledby="editorTitle">
+    <form method="dialog" id="shortcutEditor">
+      <div class="editor-head">
+        <div><p class="eyebrow">PERSONALIZE</p><h2 id="editorTitle">Your shortcuts</h2></div>
+        <button class="close" value="cancel" aria-label="Close">×</button>
+      </div>
+      <div class="editor-rows" id="editorRows"></div>
+      <div class="editor-actions">
+        <button class="add-shortcut" id="addShortcut" type="button">+ ADD SHORTCUT</button>
+        <button class="save" id="saveShortcuts" type="submit" value="save">SAVE</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="app.js"></script>
+</body>
+</html>

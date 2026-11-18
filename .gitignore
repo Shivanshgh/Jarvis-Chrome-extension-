@@ -1,0 +1,7 @@
+# Local operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Generated package archives
+*.zip
